@@ -1,0 +1,2 @@
+.game{display:flex;flex-direction:row;flex:1;justify-content:space-between}ul{list-style-type:none;border:1px solid red;padding:0}ul li{height:4em;border:1px solid orange;line-height:4em}.stat-box{display:flex;flex-wrap:wrap;border:1px solid #00f}.stat-box .stat{padding:1em}.stat-box .stat .name:after{content:": "}
+/*# sourceMappingURL=/tthq-display/App.663d7c0a.css.map */
