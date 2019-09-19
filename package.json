@@ -1,0 +1,8 @@
+{
+  "name": "headsup-display",
+  "version": "0.1.0",
+  "description": "Something we've been trying to get done for a while",
+  "main": "index.js",
+  "author": "Gail Terman & Suzi Dao",
+  "license": "MIT"
+}
