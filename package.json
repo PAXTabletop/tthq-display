@@ -6,10 +6,14 @@
   "author": "Gail Terman & Suzi Dao",
   "license": "MIT",
   "scripts": {
-    "start": "parcel app/index.html"
+    "start": "parcel app/index.html",
+    "build": "parcel build app/index.html",
+    "gh-pages": "rm -rf dist; parcel build app/index.html --public-url /tthq-display/; gh-pages -d dist"
   },
   "devDependencies": {
-    "parcel": "^1.12.3"
+    "gh-pages": "^2.1.1",
+    "parcel": "^1.12.3",
+    "sass": "^1.22.12"
   },
   "dependencies": {
     "react": "^16.9.0",
