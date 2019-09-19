@@ -4,5 +4,15 @@
   "description": "Something we've been trying to get done for a while",
   "main": "index.js",
   "author": "Gail Terman & Suzi Dao",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel app/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
 }
