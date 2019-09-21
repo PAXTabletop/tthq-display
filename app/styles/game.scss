@@ -1,0 +1,13 @@
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .image {
+        width: 4em;
+    }
+
+    .title {
+        flex-grow: 1;
+    }
+}

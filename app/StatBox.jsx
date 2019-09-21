@@ -1,5 +1,4 @@
 import React from 'react';
-import './StatBox.sass';
 
 function Stat({name, value}) {
     return (

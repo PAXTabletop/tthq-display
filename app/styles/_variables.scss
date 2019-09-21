@@ -1,0 +1,13 @@
+// official PAX colors
+$paxWest: #007DBB;
+$paxAus: #FFAD00;
+$paxUnplugged: #904799;
+$paxSouth: #FF8300;
+$paxEast: #D9272D;
+
+$primaryColor: $paxUnplugged;
+$lightColor20: lighten($primaryColor, 20%);
+$darkColor20: darken($primaryColor, 20%);
+
+$lightText: white;
+$darkText: black;

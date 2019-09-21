@@ -1,5 +1,4 @@
 import React from 'react';
-import './Game.sass';
 
 export default function Game({title, checkouts, available}) {
     return (

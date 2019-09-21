@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './Header';
 import GameList from './GameList';
 import StatBox from './StatBox';
+import './styles/app.scss';
 
 const fakeGames = [
     { title: 'Azul', checkouts: 29, available: true},
@@ -23,10 +25,23 @@ const fakeStats = {
 class App extends React.Component {
     render() {
         return (
-            <div className="wrapper">
-                <h1>PAX Tabletop</h1>
-                <GameList games={fakeGames} />
-                <StatBox stats={fakeStats} />
+            <div className="flex row">
+                <div>
+                    <Header />
+                    <div className="flex row">
+                        <div>
+                            <GameList games={fakeGames} />
+                            <StatBox stats={fakeStats} />
+                        </div>
+                        <div>
+                            <h1>Welcome to PAX Tabletop!</h1>
+                            <p>Find a game</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="sideBar">
+                    sidebar here
+                </div>
             </div>
         );
     }

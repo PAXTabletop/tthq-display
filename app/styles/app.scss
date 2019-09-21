@@ -1,0 +1,22 @@
+@import './_variables';
+@import './_utilities';
+@import './header';
+@import './game';
+@import './game-list';
+@import './stat-box';
+@import './side-bar';
+
+body, h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+}
+
+body {
+    background: #333;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}

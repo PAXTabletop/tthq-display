@@ -1,0 +1,38 @@
+.header {
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+
+    &Logo {
+        background: $primaryColor;
+        height: 40px;
+        padding: 15px 0;
+        position: relative;
+        width: 150px;
+
+        &::after {
+            border-top: 20px solid $darkColor20;
+            border-right: 20px solid transparent;
+            bottom: -20px;
+            content: '';
+            display: block;
+            position: absolute;
+            width: 75%;
+        }
+    }
+
+    &SVG {
+        height: 100%;
+        width: 100%;
+    }
+
+    &Txt {
+        color: $lightText;
+        font-size: 2em;
+        font-weight: 400;
+        letter-spacing: 2px;
+        margin-left: 20px;
+        text-transform: uppercase;
+    }
+}

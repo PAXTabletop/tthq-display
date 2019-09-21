@@ -1,6 +1,5 @@
 import React from 'react';
 import Game from './Game';
-import './GameList.sass';
 
 export default class GameList extends React.Component {
     render() {
