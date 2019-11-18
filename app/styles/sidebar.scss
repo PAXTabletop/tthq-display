@@ -1,0 +1,34 @@
+.sidebar {
+    background: white;
+    min-height: 100vh;
+    min-width: 20vw;
+    position: fixed;
+    right: 0;
+
+    &Banner {
+        background: $lightColor20;
+        color: $lightText;
+        min-height: 100vh;
+        width: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        h3 {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            transform: rotate(90deg);
+            font-size: 3vw;
+            transform-origin: center center;
+            justify-content: flex-end;
+            color: white;
+            display: flex;
+            align-items: center;
+            flex: 1 0 100vh;
+            width: 100vh;
+            box-sizing: border-box;
+            padding-right: 1vh;
+        }
+    }
+}

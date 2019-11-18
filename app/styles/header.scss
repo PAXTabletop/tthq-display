@@ -6,15 +6,16 @@
 
     &Logo {
         background: $primaryColor;
-        height: 40px;
-        padding: 15px 0;
+        height: 9vh;
+        width: 13vw;
+        padding: 1vh 1vw;
         position: relative;
-        width: 150px;
+        box-sizing: border-box;
 
         &::after {
-            border-top: 20px solid $darkColor20;
-            border-right: 20px solid transparent;
-            bottom: -20px;
+            border-top: 2vh solid $darkColor20;
+            border-right: 2vh solid transparent;
+            bottom: -2vh;
             content: '';
             display: block;
             position: absolute;

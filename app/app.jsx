@@ -4,6 +4,8 @@ import Header from './Header';
 import GameList from './GameList';
 import StatBox from './StatBox';
 import './styles/app.scss';
+import Sidebar from './Sidebar';
+import CenterBox from './CenterBox';
 
 const fakeGames = [
     { title: 'Azul', checkouts: 29, available: true},
@@ -33,15 +35,10 @@ class App extends React.Component {
                             <GameList games={fakeGames} />
                             <StatBox stats={fakeStats} />
                         </div>
-                        <div>
-                            <h1>Welcome to PAX Tabletop!</h1>
-                            <p>Find a game</p>
-                        </div>
+                        <CenterBox />
                     </div>
                 </div>
-                <div className="sideBar">
-                    sidebar here
-                </div>
+                <Sidebar />
             </div>
         );
     }
