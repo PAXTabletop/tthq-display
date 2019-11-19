@@ -12,7 +12,12 @@ function Stat({name, value}) {
 export default class StatBox extends React.Component {
     render() {
         const stats = Object.keys(this.props.stats).map(k => <Stat name={k} value={this.props.stats[k]} />)
-        return <div className="stat-box">{stats}</div>
+        return (
+            <div>
+            <div className="sectionHeader"><div>Library Status</div></div>
+            <div className="stat-box">{stats}</div>
+            </div>
+        );
     }
 
 }

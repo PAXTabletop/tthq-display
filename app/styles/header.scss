@@ -1,21 +1,21 @@
 .header {
     align-items: center;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 3vh;
     width: 100%;
 
     &Logo {
         background: $primaryColor;
-        height: 9vh;
-        width: 13vw;
+        height: 8vh;
+        width: 11vw;
         padding: 1vh 1vw;
         position: relative;
-        box-sizing: border-box;
 
         &::after {
-            border-top: 2vh solid $darkColor20;
-            border-right: 2vh solid transparent;
-            bottom: -2vh;
+            border-top: 3vh solid $darkColor20;
+            border-right: 3vh solid transparent;
+            bottom: -3vh;
+            left: -1vw;
             content: '';
             display: block;
             position: absolute;
