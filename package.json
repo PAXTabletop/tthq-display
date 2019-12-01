@@ -3,16 +3,32 @@
   "version": "0.1.0",
   "description": "Something we've been trying to get done for a while",
   "main": "index.js",
-  "author": "Gail Terman & Suzi Dao",
+  "author": "Gail Terman, Suzi Dao, & Glenn Hollingsworth",
   "license": "MIT",
   "scripts": {
     "start": "parcel app/index.html",
+    "server": "electron .",
     "build": "parcel build app/index.html",
+    "dist": "electron-builder",
     "gh-pages": "rm -rf dist; parcel build app/index.html --public-url /tthq-display/; gh-pages -d dist"
   },
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  },
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/runtime": "^7.7.4",
+    "electron": "^7.1.2",
+    "electron-builder": "^21.2.0",
+    "electron-packager": "^14.1.1",
     "gh-pages": "^2.1.1",
-    "parcel": "^1.12.3",
+    "parcel": "^1.12.4",
     "sass": "^1.22.12"
   },
   "dependencies": {

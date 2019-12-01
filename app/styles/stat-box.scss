@@ -6,9 +6,19 @@
 
     .stat {
         padding: 1em;
-        
-        .name::after {
-            content: ': ';
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+        .name {
+            background: #333;
+            padding: 0.1em;
+        }
+
+        .value {
+            background: $lightColor20;
+            padding: 0.2em;
+            font-size: 2em;
         }
     }
 }

@@ -10,14 +10,30 @@ ul {
     }
 }
 
+.leftBox {
+    margin-left: 2vw;
+    margin-top: 3vh;
+}
+
 .sectionHeader {
     background: $primaryColor;
     color: white;
     font-size: 4vh;
     display: flex;
+    position: relative;
 
     :first-child {
         flex-grow: 1;
+    }
+
+    &::after {
+        border-top: 2vh solid $darkColor20;
+        border-right: 2vh solid transparent;
+        bottom: -2vh;
+        content: '';
+        display: block;
+        position: absolute;
+        width: 60%;
     }
 }
 
@@ -25,27 +41,19 @@ ul {
     display: flex;
     line-height: 2vh;
     font-weight: bold;
+    background: white;
 }
 
 .firstSubHeader { 
     width: 3vw;
-    background: $darkColor20;
     color: white;
+    z-index: 2;
 }
 
 .secondSubHeader {
-    background: $darkColor20;
     color: white;
     flex-grow: 1;
-}
-
-.dividerSubHeader {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 2vh 1vw 0 0;
-    border-color: $darkColor20 white transparent transparent;
-    transform: scale(1.0001);
+    z-index: 2;
 }
 
 .rightSubHeader {
