@@ -1,0 +1,54 @@
+.enforcerRec {
+    width: 16vw;
+    height: 50vh;
+
+    .image {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .title {
+            background: rgba(0,0,0,.7);
+            color: white;
+            width: 100%;
+            line-height: 4vh;
+            padding-left: 1vw;
+            font-size: larger;
+            position: absolute;
+            text-transform: uppercase;
+            bottom: 0;
+        }
+    }
+
+    .content {
+        width: 10vw;
+        float: left;
+        padding: .6vh .6vw;
+    }
+
+    .detail {
+        padding: 1vh .3vw;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        float: right;
+        clear: right;       
+
+        .name {
+            background: #333;
+            padding: .3vh .3vw;
+            font-size: 1.3vh;
+            text-transform: uppercase;
+        }
+
+        .value {
+            background: $lightColor20;
+            padding: 0 0.2vw;
+            font-size: 3vh;
+            align-self: flex-end;
+            font-weight: bold;
+        }
+    }
+}

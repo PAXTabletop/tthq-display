@@ -12,7 +12,7 @@ export default class GameList extends React.Component {
             <div className="leftBox">
                 <div className="sectionHeader">
                     <div>Top Titles</div>
-                    <div>{topFive ? 1 : 2}/2</div>
+                    <div className="pageCount">{topFive ? 1 : 2}/2</div>
                 </div>
                 <div className="subHeader">
                     <div className="firstSubHeader">Box</div>

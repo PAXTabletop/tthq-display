@@ -31,4 +31,11 @@
             padding-right: 1vh;
         }
     }
+
+    &Content {
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        left: 84vw;
+    }
 }

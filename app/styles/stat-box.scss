@@ -3,22 +3,29 @@
     flex-wrap: wrap;
     background: white;
     width: 20vw;
+    padding-top: 2vh;
+    padding-left: .3vw;
+    box-sizing: border-box;
 
     .stat {
-        padding: 1em;
+        padding: 1vh .3vw;
         color: white;
         display: flex;
         flex-direction: column;
 
         .name {
             background: #333;
-            padding: 0.1em;
+            padding: .3vh .3vw;
+            font-size: 1.2vh;
+            text-transform: uppercase;
         }
 
         .value {
             background: $lightColor20;
-            padding: 0.2em;
-            font-size: 2em;
+            padding: 0 0.2vw;
+            font-size: 3vh;
+            align-self: flex-start;
+            font-weight: bold;
         }
     }
 }

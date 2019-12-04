@@ -4,10 +4,41 @@
     justify-content: space-between;
 
     .image {
-        width: 3vw;
+        height: 6vh;
+            width: 6vh;
+
+        img {
+            height: 6vh;
+            width: 6vh;
+        }
     }
 
     .title {
         flex-grow: 1;
+        font-weight: bold;
+        font-size: 1.5vh;
+        padding: 0 .25vw;
+    }
+
+    .checkouts {
+        font-weight: bold;
+        font-size: 1.5vh;
+    }
+
+    .availability {
+        height: 1vh;
+        width: 1vh;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        margin: auto .2vw;
+    }
+
+    .available {
+        background-color: green;
+    }
+    
+    .notAvailable {
+        background-color: red;
     }
 }

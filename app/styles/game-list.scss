@@ -5,8 +5,8 @@ ul {
     margin: 0;
 
     li {
-        height: 4em;
-        line-height: 4em;
+        height: 6vh;
+        line-height: 6vh;
     }
 }
 
@@ -21,6 +21,7 @@ ul {
     font-size: 4vh;
     display: flex;
     position: relative;
+    padding: .5vh .3vw;
 
     :first-child {
         flex-grow: 1;
@@ -30,10 +31,15 @@ ul {
         border-top: 2vh solid $darkColor20;
         border-right: 2vh solid transparent;
         bottom: -2vh;
+        left: 0;
         content: '';
         display: block;
         position: absolute;
         width: 60%;
+    }
+
+    .pageCount {
+        opacity: 70%;
     }
 }
 
@@ -42,6 +48,7 @@ ul {
     line-height: 2vh;
     font-weight: bold;
     background: white;
+    padding: 0 .1vw;
 }
 
 .firstSubHeader { 
@@ -54,6 +61,7 @@ ul {
     color: white;
     flex-grow: 1;
     z-index: 2;
+    padding-left: 1vw;
 }
 
 .rightSubHeader {
